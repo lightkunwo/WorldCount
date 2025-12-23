@@ -10,12 +10,13 @@ void Swap(int* &p1, int* &p2){
 int main(){
     int x = 30, y = 90;
     int *p1 = &x, *p2 = &y;
-    cout << "交换前：" << endl;
+    cout << "test case" << endl;
     cout << "*p1 = " << *p1 << ", *p2 = " << *p2 << endl;
     cout << "x = " << x << ", y = " << y << endl;
     Swap(p1, p2);
-    cout << "交换后：" << endl;
+    cout << "after swap" << endl;
     cout << "*p1 = " << *p1 << ", *p2 = " << *p2 << endl;
     cout << "x = " << x << ", y = " << y << endl;
 }
+
 
