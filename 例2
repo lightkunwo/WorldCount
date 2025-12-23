@@ -9,25 +9,18 @@ void swap(int *a, int *b) {
     *b = t;
 }
 
-// 测试函数
-void test_swap(int x, int y) {
-    int a = x, b = y;
-    cout << "测试用例：a = " << a << ", b = " << b << endl;
-    swap(&a, &b); // 传入地址
-    cout << "交换后：a = " << a << ", b = " << b << endl;
-    if (a == y && b == x) {
-        cout << "测试结果：成功\n" << endl;
-    } else {
-        cout << "测试结果：失败\n" << endl;
-    }
-}
+
 
 int main() {
-    test_swap(30, 90);
-    test_swap(-10, 20);
-    test_swap(0, 5);
-    test_swap(7, 7);
-    test_swap(INT_MAX, INT_MIN);
+    int x = 30, y = 90;
+    int *p1 = &x, *p2 = &y;
+    cout << "test case" << endl;
+    cout << "*p1 = " << *p1 << ", *p2 = " << *p2 << endl;
+    cout << "x = " << x << ", y = " << y << endl;
+    Swap(p1, p2);
+    cout << "after swap" << endl;
+    cout << "*p1 = " << *p1 << ", *p2 = " << *p2 << endl;
+    cout << "x = " << x << ", y = " << y << endl;
 
     return 0;
 }
