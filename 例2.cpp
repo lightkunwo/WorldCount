@@ -12,16 +12,17 @@ void swapPointer(int *a, int *b) {
 
 
 int main() {
-    int x = 30, y = 90;
+    int x = 30, y = 90; //初始化数值
     int *p1 = &x, *p2 = &y;
-    cout << "test case" << endl;
+    cout << "before swap" << endl;  //交换前结果
     cout << "*p1 = " << *p1 << ", *p2 = " << *p2 << endl;
     cout << "x = " << x << ", y = " << y << endl;
     swapPointer(p1, p2);
-    cout << "after swap" << endl;
+    cout << "after swap" << endl;  //交换后结果
     cout << "*p1 = " << *p1 << ", *p2 = " << *p2 << endl;
     cout << "x = " << x << ", y = " << y << endl;
 
     return 0;
 
 }
+
