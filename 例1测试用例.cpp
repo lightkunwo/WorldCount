@@ -2,30 +2,30 @@
 #include <climits>
 using namespace std;
 
-void Swap(int* &p1, int* &p2){
+void jiaohuan(int* &p1, int* &p2){
     int *t = p1;
     p1 = p2;
     p2 = t;
 }
 
-// ²âÊÔº¯Êý
+// æµ‹è¯•å‡½æ•°
 void test_swapPointer(int x, int y) {
     int a = x, b = y;
     int *p1 = &a, *p2 = &b;
 
-    cout << "²âÊÔÓÃÀý£º*p1 = " << *p1 << ", *p2 = " << *p2 << endl;
+    cout << "æµ‹è¯•ç”¨ä¾‹ï¼š*p1 = " << *p1 << ", *p2 = " << *p2 << endl;
     cout << "a = " << a << ", b = " << b << endl;
 
-    Swap(p1, p2); // ´«ÈëÖ¸ÕëµÄµØÖ·½»»»Ö¸Õë
+    jiaohuan(p1, p2); // ä¼ å…¥æŒ‡é’ˆçš„åœ°å€äº¤æ¢æŒ‡é’ˆ
 
-    cout << "½»»»ºó£º" << endl;
+    cout << "äº¤æ¢åŽï¼š" << endl;
     cout << "*p1 = " << *p1 << ", *p2 = " << *p2 << endl;
     cout << "a = " << a << ", b = " << b << endl;
 
     if (*p1 == b && *p2 == a) {
-        cout << "²âÊÔ½á¹û£º ³É¹¦\n" << endl;
+        cout << "æµ‹è¯•ç»“æžœï¼š æˆåŠŸ\n" << endl;
     } else {
-        cout << "²âÊÔ½á¹û£º Ê§°Ü\n" << endl;
+        cout << "æµ‹è¯•ç»“æžœï¼š å¤±è´¥\n" << endl;
     }
 }
 
@@ -38,3 +38,4 @@ int main() {
 
     return 0;
 }
+
