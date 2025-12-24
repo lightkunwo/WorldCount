@@ -2,23 +2,23 @@
 #include <climits>
 using namespace std;
 
-// Ö¸Õë°æ½»»»º¯Êı
-void swap(int *a, int *b) {
+// æŒ‡é’ˆç‰ˆäº¤æ¢å‡½æ•°
+void swapPointer(int *a, int *b) {
     int t = *a;
     *a = *b;
     *b = t;
 }
 
-// ²âÊÔº¯Êı
+// æµ‹è¯•å‡½æ•°
 void test_swap(int x, int y) {
     int a = x, b = y;
-    cout << "²âÊÔÓÃÀı£ºa = " << a << ", b = " << b << endl;
-    swap(&a, &b); // ´«ÈëµØÖ·
-    cout << "½»»»ºó£ºa = " << a << ", b = " << b << endl;
+    cout << "æµ‹è¯•ç”¨ä¾‹ï¼ša = " << a << ", b = " << b << endl;
+    swapPointer(&a, &b); // ä¼ å…¥åœ°å€
+    cout << "äº¤æ¢åï¼ša = " << a << ", b = " << b << endl;
     if (a == y && b == x) {
-        cout << "²âÊÔ½á¹û£º³É¹¦\n" << endl;
+        cout << "æµ‹è¯•ç»“æœï¼šæˆåŠŸ\n" << endl;
     } else {
-        cout << "²âÊÔ½á¹û£ºÊ§°Ü\n" << endl;
+        cout << "æµ‹è¯•ç»“æœï¼šå¤±è´¥\n" << endl;
     }
 }
 
@@ -31,3 +31,4 @@ int main() {
 
     return 0;
 }
+
